@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button>click</button>
+    <h1></h1>
+
+    <script>
+
+        a = prompt("이름을 입력하세요");
+        btn = document.querySelector('button');
+        hone = document.querySelector('h1')
+
+        btn.addEventListener("click", () => {
+            if (a === " " || typeof(Number(a)) =="Number" || a === null) {
+            hone.innerHTML = "이름을 입력해주세요"
+            }
+
+            else {
+                hone.innerHTML = `${a}님 안녕하세요`
+            }
+        })
+
+    </script>
+</body>
+</html>

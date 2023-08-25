@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>구구단을 외자</h1>
+    
+    <p>숫자를 입력하세요</p>
+
+    <input type="text" placeholder = "숫자를 입력하세요" id = "getnumber">
+    <button id = "for">for</button>
+    <button id = "while">while</button>
+
+    <p id = "sipal"></p>
+    <div id = "multiple"></div>
+
+
+    <script>
+        numbering = document.querySelector('#getnumber');
+        btn1 = document.querySelector("#for");
+        btn2 = document.querySelector("#while");
+        pone = document.querySelector('#sipal');
+        multi = document.querySelector('#multiple');
+        
+
+        btn1.addEventListener('click', () => {
+            pone.innerHTML = "for문을 이용한 구구단";
+            single_num = Number(numbering.value);
+            multi.innerHTML = "";
+            if (isNaN(single_num)) multi.innerHTML = "숫자를 입력해주세요";
+            else {
+            for (let i = 1; i<10; i++) {
+                multi.innerHTML += `${single_num} x ${i} = ${single_num*i}<br>`
+            }
+        }
+        })
+
+        btn2.addEventListener('click', () => {
+            pone.innerHTML = "while문을 이용한 구구단";
+            i = 1;
+            multi.innerHTML = "";
+            single_num = Number(numbering.value);
+            if (isNaN(single_num)) multi.innerHTML = "숫자를 입력해주세요";
+            // NaN은 ==, != 비교연산 못한다!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            else {
+            while (i<10) {
+                multi.innerHTML += `${single_num} x ${i} = ${single_num*i}<br>`;
+                i+=1;
+            }
+        }
+        })
+
+
+        
+
+        
+    </script>
+</body>
+
+
+</html>

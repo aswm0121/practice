@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+
+<div id="container">
+
+
+    <p class = "first">Hello World❤️</p>
+    <p style = "display:none">Hidden text</p>
+
+</div>
+
+
+<button onclick = "textFunc()">TEXT</button>
+<button onclick = "htmlFunc()">HTML</button>
+
+    <script>
+        // 1. div요소에 접근하기 -> getElementsById, qeurySelector
+        let domVal = document.querySelector('#container');
+        let story = document.querySelector('#container>p.first');
+        
+
+        function textFunc() {
+
+            console.log(domVal.innerText);
+            // console.log(story.value); input같이 입력값이 있을 때만 사용할 수 있다
+
+        }
+
+        function htmlFunc() {
+            story.innerHTML = "<p>javascript<p>";
+
+        }
+
+
+        // 텍스트 버튼 클릭시 요소에서 내용만 console.log로 불러오기
+        // HTML 버튼 클릭 시 자바스크립트로 내용 변경하기
+
+
+    </script>
+</body>
+</html>

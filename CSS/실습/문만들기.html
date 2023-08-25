@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+
+            box-sizing:border-box;
+            /* border 크기 지정해도 box크기 변하지 않도록 해줌 */
+        }
+
+        .wall {
+            width: 500px;
+            height:500px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items:center
+        }
+
+        .out {
+
+            width: 200px;
+            height: 400px;
+            background-image: url(../../source/함정카드발동.jpg);
+            background-size:cover;
+            perspective: 1000px;
+            /* perspective를 왜 여기에 써줬을까 */
+
+        }
+
+        .door {
+
+            width: 200px;
+            height: 400px;
+            background-color: brown;
+            transform-origin: 100% 0 0;
+
+            /* x y z 
+            첫번 째 숫자는 x축(0- 왼쪽, 100% 오른쪽
+            2번 째 숫자는 y축 (0-위, 100% 아래)*/
+            transition-duration: 5s;
+
+
+        }
+
+        .door:hover {
+
+            transform: rotatey(180deg);
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <div class="wall">
+
+
+        <div class="out">
+
+            <div class="door">
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

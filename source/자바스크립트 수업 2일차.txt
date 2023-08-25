@@ -1,0 +1,103 @@
+<자바스크립트 수업 2일차>
+
+Q web / browser
+39
+==========================================================================
+<review>
+
+<변수>
+var, let, const
+
+<출력>
+document.write("") -> 문서에 출력하기
+console.log() -> 출력값 확인(이거를 더 많이 씀)
+alert()
+
+<입력>
+confirm() 논리형
+prompt() 문자열로 입력받기
+
+<백틱 like 포메팅>
+(`${}`)
+
+
+<자료형>
+number, string, boolean, undefined, null....
+boolean -> truthy, falsy: 논리형 값은 true, false 뿐
+일반 값에서도 true로 인정할 수 있는 값, false로 인정할 수 있는 값 있다
+falsy - o, "", NaN, undefined, null0
+
+
+function() -> ()괄호는 실행버튼
+
+
+<형변환>
+parseFloat, parseInt, Number, toString...
+parse -> 대상 전체를 숫자로 바꿈
+number -> 문자열에 있는 숫자만 숫자로 바꿈
+ex) parseFloat('1x'); -> 1
+ex) Number('1x'); -> nan
+
+
+
+연산자
+++, --
+=,+=, -=, *= 대입연산자(복합대입연산자)
+== (대충 같다), != (대충 틀리다)
+=== (완전히 같다), !== (완전 다르다)
+! Not과 같다(!1은 false)
+&&, ||
+============================================================================
+body에서 tag 불러오려면 tdocument.getElementsByTagName해야 한다
+
+
+
+조건문
+
+let age = Number(prompt("나이는?"))
+if (age >= 18) {
+    document.write('성인이에요')
+}
+else if (age >=7) {
+    document.write('학생입니다')
+}
+else {
+    document.write("유아에요")
+}
+
+
+
+(조건)?참일때:거짓일 때
+(age >= 18) ? "":document.write('미성년이에요');
+============================================================================
+반복문
+
+while
+
+
+
+do {
+실행문;
+}
+while(조건);
+
+ for (초기식 ; 조건문 ; 증감식) {
+     실행문
+}
+
+
+//Math.random() -> 0~1사이의 난수 생성
+//Math.floor() -> 소수점 이하를 버림
+
+
+
+
+
+
+
+
+
+
+
+
+

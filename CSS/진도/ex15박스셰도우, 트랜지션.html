@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    div {
+        width:150px;
+        height:150px;
+        background-color: aquamarine;
+        margin:20px;
+        /* box-shadow: 16px 16px darkblue; */
+        /* 그림자 만듬 */
+    }
+
+    .box1 {
+        box-shadow: -16px -16px darkblue;
+    }
+
+    .box2 {
+        box-shadow: 8px 8px rgba(0,0,0, 0.4);
+
+    }
+
+    .box3:hover {
+        box-shadow: 8px 8px 8px rgba(0,0,0, 0.4);
+        transition: all 1s;
+        /* 트랜지션 전환 효과 */
+    }
+
+
+    .box4:hover {
+            box-shadow:inset 8px 8px 8px rgba(0,0,0,0.4);
+            transition: 0.5s;
+            /* display:none; */
+        /* 내부 그림자 만드려면 inset */
+        }
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="box1">오른쪽 아래에 존재하는 그림자</div>
+    <div class="box2">반투명 그림자</div>
+    <div class="box3">조금 더 그림자 같게</div>
+    <div class="box4">내부그림자</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+        #title {
+            background-color:aqua;
+            width: 600px;
+        }
+
+        .red {
+            color:red;
+        }
+        .green {
+            color:green;
+        }
+        p, li {
+        color : blue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 id = 'title'>스마트인재개발원</h1>
+    <br>
+    
+    <p><b>스마트인재개발원은 <span class = "green">광주</span>, <span class = "red">서울</span>, 순천지역에서 운영되고 있으며<br>
+    개강여부에 따라 원하는 곳에서 수강이 가능합니다</b>
+    </p>
+<!-- span.gwangju -> <span class = 'gwangju'></span>
+li.gwangju -> <li class= 'gwangju'><li>
+li#gwangju -><li id = 'gwangju'></id>
+
+
+p,span, div {
+    color:green
+} -> 가능
+
+
+
+태그 선택자 < class 선택자 < id 선택자 < 인라인스타일(style = 'color:blueviolet')
+ex) p, li {
+    color : blue;
+}
+하면 광주, 서울 빼고 파란색 됨 class green, red > p, li 선택자
+ -->
+    <ul>
+        <li class = "green">광주 본점</li>
+        <li class = "green">광주 남구점</li>
+        <li class = "green">광주 서구점</li>
+        <li class = "red">서울 서초점</li>
+        <li class = "red">서울 가산점</li>
+        <li>순천점</li>
+    </ul>
+
+
+    
+</body>
+</html>

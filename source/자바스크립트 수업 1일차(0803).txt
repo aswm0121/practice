@@ -1,0 +1,58 @@
+<자바스크립트 수업 1일차(0803)>
+
+동적인 웹(design active)만들기 위해
+
+- Java와 Javascript는 완전히 다르다!
+
+정식 명치은 ecma script
+
+client -> server(요청) url로
+server -> clineet (응답) 0101.. 신호로 응답, 파싱(parsing-의미단위로 글자를 잘라서 해석)으로 해석
+
+html
+01010 을 요소, 속성, 텍스트로 분류(돔)
+
+html(부모) - head, body (node)
+    <    돔   트    리      >
+
+alert("안녕?");
+undefined
+alert("안녕");
+
+undefined
+prompt("뭐 좋아해?");
+'수박'
+confirm("나랑 친구할래?");
+true
+
+
+log - 통나무 
+web + log = blog
+
+
+console.log 가 print의 역할 해줌(콘솔에서만 보임)
+document.write(1+1); html에서 결과 확인가능
+prompt 가 input 역할 해줌 
+-> 모든 자료를 문자열로 받음
+
+
+<자료형>
+원시 유형(primitive type)
+string, number, boolean, undefined, null, nan, array, symbol, object.....
+type of(값 또는 변수)- 자료형 확인해줌
+
+형변환 (문자열 -> 숫자) 
+-> Number('1');
+-> let c = Number(prompt("숫자를 입력해주세요")); ==========파이썬의 a = int(input("숫자를 입력해주세요"));
+
+포메팅
+document.write(`<h1>${username}님 환영합니다</h>`);
+-> `, ${} 사용
+
+
+undefined -> 정의되지 않았을 때
+null -> 아무런 값을 나타내지 않을 때
+Nan(not a number) -> 숫자가 아닐 때 -> isNaN(isFemale) -> NaN이면 true, 아니면 false
+
+
+

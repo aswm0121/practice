@@ -1,0 +1,47 @@
+<!--테이블태그
+열 개수
+행 개수 
+<tr> </tr>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<table border = "3" width = "200px", align = "center", bordercolor = 'red'>
+    <!-- 테이블 생성 선언 -->
+    <caption><b>스마트인재개발원</b></caption>
+    <!-- caption: 표 제목 -->
+    <!-- tr * 3 -->
+    <tr bgcolor = 'yellow'>
+    <th>이름</th>
+    <th colspan = " 2">성별, 주소</th>
+    </tr>
+    
+    <tr align = 'center'>
+        <td>이람다</td>
+        <td>여자</td>
+        <td rowspan = "3">서울</td>
+    </tr>
+
+    <tr align = 'center'>
+        <td>최성우</td>
+        <td rowspan = "2">남자</td>
+
+    </tr>
+
+    <tr align = 'center'> 
+        <td>김윤호</td>
+
+    </tr>
+<!-- rowspan - 행 병합(아래 위 방향)
+    colspan - 열 병합(가로 방향) -->
+</table>
+</body>
+</html>

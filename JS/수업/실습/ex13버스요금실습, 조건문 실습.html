@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+// ages = Number(prompt("나이를 입력해주세요"));
+
+// if ((ages >= 120) || (ages <= 0)) {
+//     document.write("유효한 나이를 입력해 주세요");
+// }
+// else if (ages >= 65) {
+//     document.write("무료");
+// }
+
+// else if (ages >= 20) {
+//     document.write("1500원");
+// }
+// else if (ages >= 7) {
+//     document.write("1020원");
+// }
+// else  {
+//     document.write("무료");
+// }
+
+// switch case에는 비교 연산자가 쓰이지 않는다
+//================================================================================================================
+// let age = prompt("몇살이세요?")
+// let busFare = 0;
+
+
+// if (age === null || age === "") {
+//     document.write("나이를 입력 해 주세요")
+// } else if (isNaN(age)) {
+//     document.write("숫자만 입력 해 주세요")
+// } else if (age <0 || age >120) {
+//     document.write("유효한 나이를 입력 해 주세요")
+// } else if (age >= 65 || age <=7) {
+//     busFare = 0;
+// } else if (age >= 20 && age < 65) {
+//     busFare = 1500;
+// } else {
+//     busFare = 1020;
+// }
+
+
+
+
+// document.write(`${age}살은 버스요금 ${busFare}원 입니다`);
+
+
+const colors = prompt("원하는 색상을 입력해주세요");
+
+//빨, 초, 파 이외 잘못 출력함
+// 색깔 입력하면 배경화면 바꿀 것
+// let result;
+
+// if (colors == '빨강') {
+//     result = 'red';
+// }
+
+// else if (colors == '초록') {
+//     result = 'green';
+// }
+
+// else if (colors == '파랑') {
+//     result = 'blue';
+// }
+
+// else  {
+//     document.write("잘못 입력하셨습니다");
+// }
+
+// document.getElementsByTagName('body')[0].style.background = result;
+
+
+
+
+switch(colors) {
+    case "빨강":
+        result = "red"
+        break;
+
+        case "초록":
+        result = "green"
+        break;
+
+        case "파랑":
+        result = "blue"
+        break;
+
+        case "분홍":
+        result = "pink"
+        break;
+
+        case "하늘색":
+        result = "skyblue"
+        break;
+
+        default: 
+        alert("잘못 입력하셨습니다")
+
+
+}
+document.getElementsByTagName('body')[0].style.background = result;
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

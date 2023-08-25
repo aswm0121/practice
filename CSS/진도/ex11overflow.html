@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.wrap {
+
+    width:300px;
+    height:200px;
+    border:1px solid black;
+    /* 굵기, 타입 색상 순서로 정의 */
+    padding: 10px;
+    overflow:auto;
+}
+/* overflow는 영역을 벗어나는 글자를 어떻게 처리할지에 대한 속성
+기본적으로 visible로 되어 있다 -> 영역이 벗어나도 그대로 보여짐
+overflow: hidden하면 안보임 / auto는 스크롤 나옴*, overflow:scroll하면 아닌 부분에도 스크롤나옴/*/
+.picture {
+
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    float:left;
+    /* 사진 옆에서부터 글 시작하도록 해줌 float left/float right
+    float: 요소를 띄우는 특성 */
+    margin:10px;
+    
+}
+
+.text {
+    position:relative;
+    top:-10px;
+    left:10px;
+}
+
+
+
+</style>
+<body>
+
+
+    <div class="wrap">
+        <div class="picture"></div>
+
+        <div class="text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ipsa fuga tenetur, numquam autem assumenda rem atque nemo modi ab nesciunt in repellendus nulla rerum totam itaque commodi, unde facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis dolorum officia, recusandae accusamus nam nihil nostrum ea. Iusto sunt necessitatibus unde doloribus ut consectetur iure obcaecati aliquam voluptates dolorum.
+        </p></div>
+        <!-- lorem + tap 2번 -->
+    </div>
+
+
+
+
+
+
+</body>
+</html>

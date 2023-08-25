@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width:100px;
+            height: 100px;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #gray {
+            background-color: gray;
+        }
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id = "red"></div>
+    <div id = "blue"></div>
+    <div id = "green"></div>
+    <div id = "gray"></div>
+    <button class = "btn1">이동하기!</button>
+    <button class = "btn2">둥글게!</button>
+
+<script>
+
+    let red = document.querySelector("#red")
+    let blue = document.querySelector("#blue")
+    let green = document.querySelector("#green")
+    let gray = document.querySelector("#gray")
+
+    // red.style.border = 
+
+    let btn = document.querySelector(".btn1")
+    let btntwo = document.querySelector(".btn2")
+
+
+
+    btn.addEventListener('click', () => {
+        blue.style.marginLeft = "100px";
+        green.style.marginLeft = "200px";
+        gray.style.marginLeft = "300px";
+    })
+
+    // btntwo.addEventListener('click', () => {
+    //     red.style.borderTopRightRadius = '50%';
+    //     red.style.borderBottomLeftRadius = '50%';
+
+    // })
+
+    let divList = document.querySelectorAll('div')
+    
+    
+
+    btntwo.addEventListener('click', ()=> {
+        for (let i of divList) {
+            i.style.borderTopRightRadius = "50%";
+            i.style.borderBottomLeftRadius = "50%";
+        }
+    })
+
+
+    
+
+
+</script>
+
+</body>
+</html>

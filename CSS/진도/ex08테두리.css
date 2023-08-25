@@ -1,0 +1,171 @@
+.box {
+    width:100px;
+    height:100px;
+    background-color:green;
+    border-radius: 0 50%;
+    /* 50%하면 원된다 
+    px, %로 반지름을 설정
+    수치를 하나만 입력했을 때: 네 모서리 모두 바뀜
+    수치를 두 개 입력했을 때 왼쪽 위 오른쪽 아래, 오른쪽 위 왼쪽아래 대각선끼리 같은 수치로 둥글어진다
+    수치를 세 개 입력했을 때 왼쪽 위, 오른쪽위-왼쪽 아래, 오른쪽 아래 순으로 둥글어진다
+    수치를 네 개 입력했을 때 왼쪽 위, 오른쪽 위, 오른쪽 아래, 왼쪽 아래 순으로 둥글어진다
+    */
+}
+
+div {
+    width:70px;
+    height:40px;
+    background-color:cornflowerblue;
+    margin:10px;
+    border-width : 5px;
+    /* 테두리 두깨 = border-width */
+
+/* 각 사각형 사이에는 20px의 간격이 존재한다 (10px + 10px) */
+/* body에도 margin이 디폴트값으로 8px 존재한다 */
+
+}
+
+.solid {
+
+
+    border-style:solid;
+    /* 실선
+    실선이 바깥으로 형성되어 전체적인 도형의 크기 다소 증가 */
+}
+
+.double {
+    border-style: double;
+    /* 테두리가 두개 생김 */
+}
+
+.dotted {
+    border-style: dotted;
+    /* 테두리 모양 점모양 */
+}
+
+.dashed {
+    border-style: dashed;
+    /* 테두리 점이자 사각형 모양 */
+}
+
+.groove {
+
+    border-style:groove;
+    /* 도형이 살짝 내려감 */
+}
+
+.ridge {
+
+    border-style:ridge;
+    /* 도형이 위로 살짝 튀어나옴 */
+}
+
+
+.inset{
+border-style:inset;
+/* 버튼(컨텐츠)이 눌린 모양 */
+
+}
+
+
+.outset{
+border-style:outset;
+/* 버튼(컨텐츠)이 튀어나와 있는 모양 */
+}
+
+
+.underline {
+    font-size : 0.5em;
+        /* 원래 있는 부모 요소 폰트 크기의 0.5배 */
+    text-align:center;
+    line-height:40px;
+    /* 글자를 수직 중앙정렬 하는 첫 번째 방법 
+    line-height를 요소의 높이만큼 준다 */
+    background-color: white;
+    border-bottom-style:double;
+    border-left-style: dashed;
+    border-top-style:inset;
+    border-right-style:outset;
+}
+/* padding -> border -> margin -> outline*/
+/* 각 테두리에 각각 선 넣는 거 가능 (top, bottom, left, right */
+
+
+.triangle {
+background-color:white;
+width : 0px;
+height : 0px;
+border-top: 50px solid transparent;
+border-right: 50px solid transparent;
+border-left:50px solid transparent;
+border-bottom:50px solid skyblue;}
+/* 삼각형 만들기 */
+
+.equilateral_triangle {
+    background-color:white;
+width : 0px;
+height : 0px;
+border-top: 50px solid transparent;
+border-right: 50px solid transparent;
+border-left:50px solid transparent;
+border-bottom:90px solid skyblue;
+}
+
+.youtube_big {
+    width:  120px;
+    height: 80px;
+    border-radius: 20%;
+    background-color:red;
+    display:flex;
+    justify-content:left;
+    align-items:left;
+
+}
+.youtube_square {
+    width:0px;
+    height: 0px;
+    border-top: 30px solid red;
+    border-right: 30px solid white;
+    border-left:30px solid red;
+    border-bottom:30px solid red;
+    
+    
+    
+    
+}
+
+
+.youtube {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+    border-radius: 20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.triangle2 {
+    width : 0px;
+    height:0px;
+    background-color: red;
+    border-top:100px solid transparent;
+    border-left:150px solid white;
+    border-bottom:100px solid transparent;
+    border-right:100px solid transparent;
+    margin-left:150px;
+
+
+
+}
+/* 정삼각형 만들기 */
+/* display:flex;
+    justify-content:center;
+    align-items:center; 
+    -> 자식을 중앙 정렬시켜줌*/
+
+
+
+
+

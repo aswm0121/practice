@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+
+
+
+
+    <script>
+        // fn+f12 -> lock 풀어줌
+        //이모티콘을 입력하세요 -> 프롬프트 받을 것
+        // 출력할 행의 갯수를 입력하세요 -> prompt
+        // 1. 함수 선언문으로 직각삼각형 만들기
+        // 이중 for문 돌리기
+
+        let askyou = prompt("이모티콘을 입력하세요");
+        let linenumber = Number(prompt("출력할 행의 갯수를 입력하세요"));
+
+    // 화살표 함수
+        const triangles = (shape, number) => {
+            for (let i = 0; i<number; i++) {
+            for (let k = 0; k<i+1; k++) {
+                document.write(`${shape}`)
+                
+            }
+            document.write(`<br>`);
+        }
+ 
+        }
+
+        triangles(askyou, linenumber);
+
+
+        // 일반 함수
+        
+        // function triangle(shape, num) {
+        //     for (let i = 0; i<num; i++) {
+        //     for (let k = 0; k<i+1; k++) {
+        //         document.write(`${shape}`)
+                
+        //     }
+        //     document.write(`<br>`);
+        // }
+ 
+        // }
+
+        
+        
+
+        
+        
+
+
+
+
+    </script>
+</body>
+</html>

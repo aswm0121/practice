@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+
+    .flex {
+        /* class에 이름 여러 개 사용 가능 */
+        display: flex;
+        border: 1px solid black;
+        padding: 16px;
+        background-color: aquamarine;
+        margin-bottom:16px;
+    }
+
+    .flex > div {
+
+        background-color: blueviolet;
+        color: white;
+        border:1px black;
+        margin-right:10px;
+    }
+
+    .flex-start{
+        justify-content: start;
+
+    }
+    /* 메인축의 시작점부터 정렬 */
+ 
+
+    .flex-end {
+        justify-content: end;
+    }
+       /* 메인축의 끝점으로 정렬 */
+
+    .flex-center{
+        justify-content: center;
+    }
+       /* 메인축의 중앙으로 정렬 */
+</style>
+
+
+</head>
+<body>
+
+<div class="flex flex-start">
+<!-- 이 div의 클래스는 flex, flex-start라는 두개의 이름이 존재 -->
+    <div>플렉스</div>
+    <div>스타트</div>
+</div>
+<div class="flex flex-end">
+    <div>플렉스</div>
+    <div>엔드</div>
+</div>
+<div class="flex flex-center">
+    <div>플렉스</div>
+    <div>센터</div>
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>

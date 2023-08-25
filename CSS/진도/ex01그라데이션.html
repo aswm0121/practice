@@ -1,0 +1,50 @@
+<!-- 
+ <body text = 'red'> -> 모든 텍스트 빨간색
+<h1 style="color:red">빨간색</h1> -> 해당 텍스트만 빨간색
+<h1 style = 'color:blue;'>파란색</h1> -> ; 두 개 값 넣을 때 구분해주는 역할
+hex 코드 : 16진수로 색을 표현하는 방식 ->  EX) #FF0000;
+ex) color : #A747E8;
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color:red;
+            /* 선택자{
+                속성:값;
+            } */
+        }
+        /* 주석 모양이 다르다 이 내부에서는 css문법을 따르기 때문에*/
+
+        h2 {
+            color:orange;
+        }
+
+        div {
+            width:100px;
+            height:100px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        /* 그라데이션 색깔 
+        https://cssgradient.io/
+        ex) 거기 색 그냥 그대로 복사 붙여넣기 하면 된다
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+
+    </style>
+ </head>
+
+ <body>
+
+    <div>
+    <!-- div태그 생성  -->
+        안녕하세요
+    </div>
+
+ </body>
+ </html>

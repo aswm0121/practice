@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <!-- 숫자 두개 입력 받아서 -->
+    <button>더하기</button>
+    <h1></h1>
+    <!--h1에 합이 나오도록 프로그램을 만드시오-->
+
+
+<script>
+let num1 = document.querySelectorAll('input')[0];
+let num2 = document.querySelectorAll('input')[1];
+let btn = document.querySelector('button');
+let h1 = document.querySelector('h1');
+// h1도 불러와야.....
+
+
+
+btn.addEventListener('click', function sum() {
+    let result = Number(num1.value) + Number(num2.value);
+    // 태그의 값을 가져오려면 value를 써줘야
+    h1.innerHTML += `${result} <br>`;
+    
+});
+
+</script>
+
+
+</body>
+
+
+
+</html>

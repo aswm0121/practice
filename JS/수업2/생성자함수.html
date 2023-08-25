@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+function Book(title, pages, done = false) {
+    this.title = title;
+    this.pages = pages;
+    this.done = done;
+    this.finish = function () {
+        let str = "";
+        this.done == false ? str = "읽는 중" : str = "완독";
+        return str;
+    }
+}
+
+//  new 예약어 써서 객체를 찍어낼 수 있음
+
+let book1 = new Book('웹 표준의 정석', 649, false);
+let book2 = new Book('점프 투 파이썬', 360, true);
+
+console.log(`${book1.title} - ${book1.pages}쪽 - ${book1.finish()}`);
+console.log(`${book2.title} - ${book2.pages}쪽 - ${book2.finish()}`);
+
+// let arr = new Array();
+// new Array()는 arr의 프로토타입
+
+    </script>
+</body>
+</html>

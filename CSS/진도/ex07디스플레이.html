@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY</title>
+    <style>
+/* 타입을 바꿔보자 */
+h1 {
+    display:inline;
+}
+
+a {
+    display:block;
+}
+
+div:hover {
+    display:none;
+}
+
+.box {
+
+    width : 100px;
+    height: 100px;
+    background-color:aquamarine;
+}
+
+.hiddenbox {
+    width : 100px;
+    height: 100px;
+    background-color:aquamarine;
+    /* display:inline; 해줄 때 내용이 없으면 사라짐*/ 
+}
+
+    </style>
+</head>
+
+
+
+
+<body>
+<!-- 디스플레이 속성
+-화면에 보여지는 형태를 지정
+-inline, block, inline-block, flex, grid
+
+- inline: 내용 만큼의 영역을 가지는 속성// span -> 여백이 없다(글자 크기만큼)-> 인라인임
+-> width, height 줘도 영역 변하지 않는다
+
+
+
+- block: 웹 페이지 전체 너비를 영역을 가지는 속성//p태그가 block임
+- inline-block:내용만큼의 영역을 가지면서 여백, 크기 조절이 가능한 속성// div가 인라인 블럭임(내용만큼의 영역 가지면서 크기 조절 가능)
+- none: 요소를 화면에서 제거하는 속성
+- flex, grid: 레이아웃 속성/ flex:꼬챙이, grid:격자무늬 
+- -->
+
+<h1>block특성을 가진 요소</h1>
+<!-- 한줄을 다 차지함 -->
+<a href="">inline 특성을 가진 요소</a> <a href="">입니다</a>
+
+<!-- 타입 바꿀 수 있다 -->
+<!-- . + enter하면 div 나옴 -->
+<div>디스플레이 속성: none</div>
+ 
+<div class="box"></div>
+<div class="hiddenbox"></div>
+
+</body>
+<!-- 쌓인다 -->
+<!-- none은 화면상에서 안보이는 것이 아니라 아예 요소가 사라진다 -->
+
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+//랜덤한 수를 뽑아줌
+
+//Math.random() -> 0~1사이의 난수 생성
+//Math.floor() -> 소수점 이하를 버림
+
+
+// 1~100까지 숫자들 중에 하나 나옴
+//사용자에게 숫자를 입력 받아서 랜덤숫자가 입력한 숫자보다 작으면 
+//입력한 숫자보다 작은 수 입니다
+//랜덤숫자가 입력한 숫자보다 크면 입력한 숫자보다 큰 수입니다.
+// 같으면 정답입니다, 축하합니다
+//while, if문 사용
+
+
+let ranNum = Math.floor(Math.random()*100)+1;
+let num10 = 0;
+
+while (num10 != ranNum) {
+    num10 = Number(prompt("숫자를 입력하세요"));
+    if (num10 > ranNum) {
+        alert("입력한 숫자보다 작은 수 입니다");
+    }
+    else if (num10 < ranNum) {alert("입력한 숫자보다 큰 수 입니다");
+}
+    else {
+        alert("정답입니다, 축하합니다");
+        break;
+    }
+}
+
+
+
+
+
+
+
+    
+</script>
+
+
+
+
+
+</body>
+</html>

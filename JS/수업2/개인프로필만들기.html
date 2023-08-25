@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f3aa567758.js" crossorigin="anonymous"></script>
+    
+
+
+    <style>
+        @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+        body {
+            /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+            font-family: 'TheJamsil5Bold';
+            background: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+            
+        }
+        #biggest {
+            background-color: rgba(0, 0, 0, 0);
+            height: 580px;
+            width: 650px;
+            border: solid 0px black;
+        }
+
+        #first_page {
+            background-color: rgba(0, 0, 0, 0);
+            height: 500px;
+            width: 300px;
+            border: solid 2px black;
+            margin : 10px;
+            
+        }
+
+        #name {
+            font-weight: bold;
+            position: relative;
+            left: 150px;
+            bottom: 100px;
+            bottom:400px;
+            transition: font-size 0.3s ease;
+
+        }
+        #name:hover {
+           
+            font-size: 18px;
+        }
+
+        .topbottom.first {
+            background-color:  aquamarine;
+            color: white;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 60px;
+            margin : 0;
+            transition: font-size 0.3s ease;
+            /* background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%); */
+
+        }
+        .topbottom.first:hover {
+            font-size: 18px;
+        }
+
+
+
+        
+        .fa-solid.fa-moon {
+            height: 40px;
+            width:40px;
+            position: relative;
+            right: 0px;
+            top: 12px;
+            z-index: 4;
+
+
+        }
+
+        #night {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            position: relative;
+            right: 30px;
+            border: solid 2px black;
+        }
+
+        #person {
+            width : 100px;
+            height: 100px;
+             margin : 20px;
+            border-radius: 50%;
+        }
+
+        #person:hover {
+            transform: rotate(-1turn);
+            transition:5s;
+            
+
+
+        }
+
+         
+
+        #characteristics {
+            position: relative;
+            bottom: 350px;
+        }
+
+
+        #second_page {
+            background-color:rgba(0, 0, 0, 0);
+            height: 500px;
+            width: 300px;
+            border: solid 0px black;
+            margin : 20px;
+            position: absolute;
+            left:300px;
+            top: -10px;
+
+        }
+.topbottom.button {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 60px;
+            margin : 0;
+            height: 60px;
+}
+
+button {
+    font-family: 'TheJamsil5Bold', cursive;
+    padding: 6px 12px;
+    font-size: 18px;
+    background-color: rgb(24, 178, 238);
+    border-radius: 3px;
+    border:0;
+    margin: 4px;
+    border-style: outset;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+
+    
+}
+button:active {
+  transform: translateY(2px); /* Move the button down slightly when pressed */
+}
+
+
+       
+.hidden {
+    display:none;
+}
+
+.fa-solid.fa-arrow-right {
+    position: relative;
+    left: 620px;
+    top: 420px;
+    width: 30px;
+    height: 30px;
+    animation-name:left_right;
+    animation-duration:1s;
+    animation-iteration-count: 400;
+    cursor: pointer;
+
+
+}
+
+@keyframes left_right {
+
+from{
+left: 260px;
+}
+/* relative에서 top: 0은 현재 그 위치를 말함 */
+/* 여기에서부터 */
+50% {left:260x;
+    transform:scale(1);
+transition: 5s;
+
+  
+}
+/* 중간지점 */
+
+to  {left: 270px;
+
+}
+/* 여기까지 도달 */
+}
+
+#school {
+    transition: font-size 0.3s ease;
+
+}
+
+#school:hover {
+    font-size: 18px;
+}
+
+#major {
+    transition: font-size 0.3s ease;
+}
+#major:hover {
+    font-size: 18px;
+}
+
+#dcx {
+    transition: font-size 0.3s ease;
+}
+#dcx:hover {
+    font-size: 18px;
+}
+.texts {
+    color:black;
+    
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    z-index: 3;
+    color: black;
+    font-weight: 200;
+    background-color:rgba(0, 0, 0, 0);
+    overflow:auto;
+}
+
+.mail {
+    position: absolute;
+    top: 400px;
+    font-size: 13px;
+    left: 20px;
+}
+
+li {
+    font-weight:bold;
+}
+
+#sns {
+    height: 70px;
+    width:300px;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    bottom: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:10px;
+    z-index: 4;
+    border: solid, 0px;
+    
+    
+}
+
+
+
+.snses {
+   
+    width : 40px;
+    height: 40px;
+    margin : 10px;
+    position: relative;
+    top: 5px;
+    z-index: 3;
+    
+}
+
+
+
+    #snses:hover  {
+    transition:1s;
+    transform:translate(20px, 20px);
+}
+
+#progressContainer {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  margin: 10px;
+}
+
+#progressBar {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.1s;
+  margin : 20px;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+#music_table {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 300px;
+    bottom: 700px;
+
+}
+
+#button_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    position: relative;
+    width: 300px;
+    bottom: 670px;
+    left: 950px;
+    background-color: gray;
+}
+
+#playButton {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    margin:2px;
+    
+}
+#pauseButton {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    
+}
+
+#stopButton {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    
+}
+
+.fa-solid.fa-play {
+    position: relative;
+    right: 2px;
+
+}
+.fa-solid.fa-pause {
+    position: relative;
+    right: 2px;
+    
+    
+}
+.fa-solid.fa-square {
+    position: relative;
+    right: 4px;
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id = "biggest">
+        <div id="first_page">
+<div class="topbottom first"><button id = "night"><i class="fa-solid fa-moon"></i></button></i><b>Introduce Yourself</b></div>
+<div class="image_explanation">
+    <img src="../../source/프로필_사진.jpg" alt="" id = "person"></div>
+    <img src="../../source/devil.jpg" alt="" class = "devil hidden"></div>
+    <div id = "name">안상우<br><br>AHN SANG WOO</div>
+    <div id = "characteristics"> 
+        <ul>
+            <li id = "school">중앙대학교 재학중</li>
+            <br>
+            <li id = "major">소프트웨어 벤처 전공</li>
+            <br>
+            <li id = "dcx">DCX 기반 빅데이터 서비스 과정 <br>공부중</li>
+
+        </ul>
+    </div>
+        <div id = "sns">
+            <a href="https://www.instagram.com/" target = "blank"><img src="../../source/Instagram_icon.jpg" alt="" class = "snses"></a>
+            <a href="https://www.facebook.com/" target = "blank"><img src="../../source/Facebook_icon.jpg" alt="" class = "snses"></a>
+            <a href="https://kr.linkedin.com/" target = "blank"><img src="../../source/linkedin.jpg" alt="" class = "snses"></a>
+            <a href="https://www.youtube.com/" target = "blank"><img src="../../source/youtube.jpg" alt="" class = "snses"></a>
+            
+
+        </div>
+        </div>
+
+
+
+
+<div class="toopbottom"></div>
+</div>
+
+<div id="second_page">
+<div class="topbottom button">
+<button id = "intro">자기소개</button>
+<button id = "specialty">특기</button>
+<button id = "personality">성격</button>
+</div>
+<!-- intro
+specialty
+personality -->
+<div class="texts hidden">안녕하세요! 안상우입니다. 저는 현재 OO은행의 OO부서에서 3년간 근무하고 있습니다.
+학부 때에는 경제학을 전공하고, 졸업 이후 OO은행에서 3년간 실무경험을 쌓았으며, 이러한 경력을 바탕으로 핀테크 회사에서 제 커리어를 더욱 발전시키고자 지원하게 되었습니다
+</div>
+
+<div class="texts hidden">저의 취미이자 특기는 운동과 독서입니다. 몸이 무거워지는 것을 싫어하고 그것이 나태하다는 느낌을
+주기 때문에 저는 항상 스스로를 단련하려 운동을 하고 있습니다. 운동을 하면서 정신도 제정비하고 외면적으로 보이는 부분도 항상 가꿉니다. 또한 저는
+ 독서를 굉장히 좋아합니다.</div>
+<div class="texts hidden">시간약속을 잘 지킵니다. 친구들과의 약속뿐만 아니라, 저 자신과 한 약속도 중요하게 생각하여 목표한 바는
+     반드시 지키려고 노력하였습니다. 학교를 다니는 동안 하루도 빠짐없이 성실하게 다니는 것 또한 학교와의 약속이라 생각하며 지각, 결석도
+      한 번 없이 성실하게 다녔습니다.</div>
+
+<div class="mail hidden">mail: ahnsangwoo21111@gmail.com<br><br>mobile:010-4909-6453<br><br>
+birth: 2000/01/21
+</div>
+
+
+    
+    <!-- <audio id="myAudio" src="audio.mp3"></audio> -->
+    
+    <div><i class="fa-solid fa-arrow-right"></i></div>
+</div>
+</div>
+</div>
+</div>
+<div id="music_table">
+      <audio id="audioSource" src="../../source/song.mp3"></audio>
+      </div>
+      <div id="button_table">
+        <button id = "playButton"><i class="fa-solid fa-play"></i></button>
+        <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
+        <button id="stopButton"><i class="fa-solid fa-square"></i></button>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+
+        // 자기소개 성격 특기 버튼 조작
+        let btn1 = document.querySelector('#intro');
+        let intro = document.querySelectorAll('.texts')[0];
+        let btn2 = document.querySelector('#specialty');
+        let specialty = document.querySelectorAll('.texts')[1];
+        let btn3 = document.querySelector('#personality');
+        let personality = document.querySelectorAll('.texts')[2];
+        let intro_text = document.querySelectorAll('.texts');
+        let bodyda = document.querySelector('body');
+        let biggest_text = document.querySelector("#biggest");
+
+        btn1.addEventListener('click', () => {
+            if (intro.classList.contains('hidden')) {
+                intro.classList.remove('hidden');
+                specialty.classList.add('hidden');
+                personality.classList.add('hidden');
+
+        }
+            else intro.classList.add('hidden')
+            
+
+        })
+
+        btn2.addEventListener('click', () => {
+            if (specialty.classList.contains('hidden')) {
+                specialty.classList.remove('hidden');
+                intro.classList.add('hidden');
+                personality.classList.add('hidden');
+            }
+            else specialty.classList.add('hidden');
+
+        })
+
+        btn3.addEventListener('click', () => {
+            if (personality.classList.contains('hidden')){
+             personality.classList.remove('hidden');
+             intro.classList.add('hidden');
+             specialty.classList.add('hidden');
+
+            }
+            else personality.classList.add('hidden');
+           
+        })
+
+
+
+        // 밤 버튼 누르면 색깔 바뀌는 함수
+        let night_button = document.querySelector(".fa-solid.fa-moon");
+        let total = document.querySelector('body');
+        let names = document.querySelector('#name');
+        let char = document.querySelector('#characteristics');
+        let introduct = document.querySelectorAll('.texts');
+        let first_p = document.querySelector('#first_page');
+        let second_p = document.querySelector('#second_page');
+        let arrow = document.querySelector('.fa-solid.fa-arrow-right');
+        let btn = document.querySelector('button');
+        let topbottom_first = document.querySelector('.topbottom.first');
+        let introbtn = document.querySelector('#intro');
+        let specialtybtn = document.querySelector('#specialty');
+        let personalitybtn = document.querySelector('#personality');
+        let picture = document.querySelector('#person');
+        let mails = document.querySelector('.mail')
+
+
+        night_button.addEventListener('click', () => {
+            if (total.style.background == "black") {
+                total.style.background = "linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%)";
+                topbottom_first.style.backgroundColor = "aquamarine";
+                topbottom_first.style.background = "aquamarine";
+                names.style.color = "black";
+                char.style.color = "black";
+                for (let i = 0; i<3; i++) {
+                    introduct[i].style.color = 'black';
+                }
+                first_p.style.border = "solid 2px black";
+                second_p.style.border = "solid 2px black";
+                arrow.style.color = "black";
+                btn.style.backgroundColor = "rgb(24, 178, 238)";
+                introbtn.style.backgroundColor = "rgb(24, 178, 238)";
+                specialtybtn.style.backgroundColor = "rgb(24, 178, 238)";
+                personalitybtn.style.backgroundColor = "rgb(24, 178, 238)";
+                night_button.style.background = "rgb(0,0,0,0)";
+                mails.style.color = "black";
+            }
+            
+            else {
+                total.style.background = "black";
+                names.style.color = "white";
+                char.style.color = "white";
+                for (let i = 0; i<3; i++) {
+                    introduct[i].style.color = 'white';
+                }
+                first_p.style.border = "solid 2px white";
+                second_p.style.border = "solid 2px white";
+                arrow.style.color = "white";
+                btn.style.backgroundColor = "gray";
+                topbottom_first.style.background = "linear-gradient(147deg, #0d0d0c 0%, #842c2c 74%)";
+                introbtn.style.backgroundColor = "gray";
+                specialtybtn.style.backgroundColor = "gray";
+                personalitybtn.style.backgroundColor = "gray";
+                mails.style.color = "white";
+                
+
+            }
+
+        })
+
+
+
+
+
+// 음원
+const audio = document.getElementById("audioSource");
+const playButton = document.getElementById("playButton");
+const pauseButton = document.getElementById("pauseButton");
+const stopButton = document.getElementById("stopButton");
+const progressBar = document.getElementById("progressBar");
+
+playButton.addEventListener("click", () => {
+  audio.play();
+});
+
+pauseButton.addEventListener("click", () => {
+  audio.pause();
+});
+
+stopButton.addEventListener("click", () => {
+  audio.pause();
+  audio.currentTime = 0;
+});
+
+audio.addEventListener("timeupdate", () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.width = `${progress}%`;
+});
+        
+
+// arrow 클릭하면 페이드인으로 서서히 인적사항 나타남
+
+arrow.addEventListener('click', () => {
+
+    if (mails.classList.contains('hidden')) {
+        mails.classList.remove('hidden');
+    }
+
+    else {
+        mails.classList.add('hidden');
+    }
+
+
+})
+     
+    
+
+
+
+
+    </script>
+
+</body>
+</html>

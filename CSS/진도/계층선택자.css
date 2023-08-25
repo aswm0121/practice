@@ -1,0 +1,78 @@
+
+/* 눈누에서 폰트 복사한 코드 -> FONT FAMILY만 전체에 적용 */
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        h2 {
+            text-align : right;
+            /* align : right; 아니다 */
+        }
+
+        #coffee {
+            list-style-type : '☕';
+        }
+
+        #noncoffee {
+            list-style-type:'❤️'
+        }
+        /* 조상(띄어쓰기)자손{선언} -> 조상이 #coffee인 자손들의 style 바꿔준다 */
+        #coffee li { 
+            
+            list-style-type:square;
+        }
+        #noncoffee li {
+            list-style-type:lower-latin;
+        }
+        
+        /* 자식선택자 > 
+        부모 > 자식 {선언} << 사용 */
+        #coffee>ul>p {
+            font-weight:700;
+        }
+/* ================================여기부터 반응선택자 실습================================= */
+/* ================================여기부터 반응선택자 실습================================= */
+        h1:hover {
+            background-color: orange;
+            color : black;
+
+        }
+        h1:active {
+            background-color: darkblue;
+        }
+        a:visited {
+            color : red;
+            /*하이퍼링크 누른다음 */
+        }
+        input:focus {
+        background-color: white;
+        
+        /* 포커스 했을 때 */
+
+        }
+
+        #coffee:hover {
+            background-color: brown;
+            color: gold;
+        }
+
+        h2:hover {
+            background-color: red;
+            color: black;
+        }
+        #noncoffee:hover {
+            background-color: yellow;
+            color: darkgreen;
+        }
+
+        * {
+            font-family: 'Giants-Inline';
+        }
+
+#americano {
+    font-size:20px;
+    font-size:2em;
+}

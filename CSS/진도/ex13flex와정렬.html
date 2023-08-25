@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+
+            width:400px;
+            height:200px;
+            background-color: tomato;
+             display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 세로 정렬 되었던 item이 가로 정렬됨 */
+            /* display:(block, inline)과는 다르게 부모에 적용하여 자식들에게 영향을 준다
+            ex) container에 영향을 주어서 item들에게 영향을 준다
+            flex-direction (정렬 방향)정할 수 있다 기본값이 row(가로)
+            column reverse하면 item3,item2, item1처럼 역순으로 세로 방향
+            flow-wrap: no wrap이 기본값, wrap하면 튀어나오는 부분 아래로 내려옴, wrap reverse도 있음
+            */
+            justify-content: center;
+            align-items:center; 
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+
+
+
+
+            /* justify-content: 안에 있는 내용물들의 정렬, text-align과는 다르다
+            start, end, center.. 등등 flex-direction:(row, column)의 영향을 받는다
+            end는 row-reverse와는 다르게 순서가 바뀌지 않는다
+            space-between: 내용물들간에 간격 최대한 띄워줌
+            space-around: 양옆에 같은 크기의 여백을 추가해줌
+            space-evenly: 여백들의 모든 여백의 크기가 동일하도록 설정
+            꼬치가 메인축, 고기들 위치가 justify-content, 메인축과 수직인 선이 교차축
+
+            align-items: 교차축 설정(center, start, end)
+
+
+             */
+
+        }
+
+        .item {
+            width:70px;
+            height:50px;
+            background-color: blue;
+            color:white;
+            border: 3px solid white;
+            /* 배경은 파란색, 글씨 색 흰색, 테두리 3px 단선 흰색 */
+            
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+   <div class="container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <div class="item">item6</div>
+    <div class="item">item7</div>
+    <div class="item">item8</div>
+    <div class="item">item9</div>
+
+
+   </div> 
+</body>
+</html>

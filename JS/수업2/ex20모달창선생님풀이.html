@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f3aa567758.js" crossorigin="anonymous"></script>
+    <style>
+   
+        .container {
+            width: 200px;
+            height:200px;
+            box-shadow: 4px 4px 4px black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            background-image: linear-gradient(to right,skyblue,white);
+            position:relative;
+            top:50px;
+            left:60px;
+        }
+        .hidden {
+            display:none;
+        }
+        .wrapper {
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <button>Hello</button>
+    <div class="wrapper hidden">
+    <div class="container hidden">
+        <h2>안녕하세요?</h2>
+        <button class="confirm">확인<i class="fa-solid fa-globe"></i></button>
+
+
+    </div>
+</div>
+    </div>
+
+
+    <script>
+        const btn = document.querySelector('button');
+        const wrapper = document.querySelector('.wrapper')
+        const container = document.querySelector('.container')
+        const  input = document.querySelector('input');
+        
+
+
+        btn.addEventListener('click',()=>{
+            wrapper.classList.remove('hidden');
+            container.classList.remove('hidden');
+            const h2 = document.querySelector('h2');
+            if (input.value == '') {h2.innerText = "이름을 입력해주세요";}
+            else {
+                h2.innerText = `${input.value}님 안녕하세요`
+            }
+        
+        })
+
+
+        const confirmBtn = document.querySelector('.confirm');
+        confirmBtn.addEventListener('click',()=>{
+            container.classList.add('hidden');
+            wrapper.classList.add('hidden');
+        })
+    </script>
+</body>
+</html>
+
+

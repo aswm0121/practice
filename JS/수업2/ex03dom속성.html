@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <!-- #container  -->
+    <p>hello world</p>
+    <p style = "display:none">Hidden Text</p>
+    <button class = 'htmlbtn'>Text</button>
+    <button>html</button>
+
+    <script>
+
+        //1. div 요소에 접근
+        // 2가지 방법 1) getElementsByid
+        let value = document.getElementById('container');
+        
+        // 2) : querySelector
+
+        let val2 = document.querySelector('#container');
+        console.log(val2);
+
+        let textbtn = document.querySelectorAll('button')[0];
+        let htmlBtn = document.querySelector('.htmlbtn');
+
+// getElementsBy
+// -> 요소 가져옴
+// queryselector 
+// css selector 이용, 선택자 가져옴, ex) queryselector(li:nthchild[1]), 요소의 첫번째만 가져옴
+//queryselectorAll -> 배열 전체로 가져옴 -> 인덱싱을 해줘야 함
+
+// getelementsby ~는 class, id, 요소에 따라 뒤에 써주는 게 다르지만
+// queryselector는 class, id, 요소 모두 가져와줄 수 있다
+
+
+
+
+    </script>
+</body>
+</html>

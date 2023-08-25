@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <!-- 입력한 숫자는 3과 5 입니다 -->
+    <button>더하기</button>
+    <button>빼기</button>
+    <button>나누기</button>
+    <button>곱하기</button>
+    <h2></h2>
+
+    
+
+
+    <!-- <script src="ex09연산자.js"></script> -->
+    <!-- <script src="ex10연산자실습.js"></script> -->
+    <!-- <script src="ex11인치센치.js"></script> -->
+    <script>
+
+const h2First = document.getElementsByTagName('h2')[0];
+const h2Second = document.getElementsByTagName('h2')[1];
+const button1 = document.getElementsByTagName('button')[0];
+const button2 = document.getElementsByTagName('button')[1];
+const button3 = document.getElementsByTagName('button')[2];
+const button4 = document.getElementsByTagName('button')[3];
+
+
+
+const numA = Number(prompt("숫자를 입력 해 주세요"));
+const numB = Number(prompt("숫자를 하나 더 입력 해 주세요"));
+       
+h2First.innerText = `입력한 숫자는 ${numA}, ${numB}입니다.`;
+
+button1.addEventListener('click', 함수first);
+function 함수first()  {
+
+// h1 스타일의 글자색을 빨갛게 해
+h2Second.innerText= `결과는 ${numA+numB}입니다.`;
+}
+
+button2.addEventListener('click', 함수second);
+function 함수second()  {
+
+// h1 스타일의 글자색을 빨갛게 해
+h2Second.innerText= `결과는 ${numA-numB}입니다.`;
+}
+
+button3.addEventListener('click', 함수third);
+function 함수third()  {
+
+// h1 스타일의 글자색을 빨갛게 해
+h2Second.innerText= `결과는 ${numA*numB}입니다.`;
+}
+
+button4.addEventListener('click', 함수four);
+function 함수four()  {
+
+// h1 스타일의 글자색을 빨갛게 해
+
+h2Second.innerText= `결과는 ${numA/numB}입니다.`;
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+
+
+    margin: 0;
+
+}
+
+
+
+
+div {
+
+    width: 100px;
+    height:100px;
+    background-color: red;
+    opacity:0.5;
+    /* opacity - 투명도 aka background-color:rgba(0,0,0,0.5) */
+}
+
+.static {
+
+    position:static;
+}
+
+
+.relative {
+
+    position:relative;
+    background-color: aquamarine;
+     
+    /* top:100px; */
+    /* bottom:150px;*/
+    /* left:100px */
+} 
+
+.absolute {
+
+
+    position:absolute;
+    
+    background-color: black;
+     left:100px;
+}
+
+ /* .fixed {
+    position:fixed;
+    background-color: chartreuse;
+    top:100px;
+}  */
+
+.sticky {
+
+
+    position:sticky;
+    background-color: deeppink;
+    top:100px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+       const arrList = [];
+
+
+       while (true) {
+           let value = prompt("숫자를 입력 해 주세요");
+           if (value === "" || value === null || !isFinite(value)) break;
+           arrList.push(Number(value));
+           
+       }
+
+
+       let oddNum = [];
+       let oddCnt = 0;
+       for (let i = 0; i < arrList.length; i++) {
+           if (arrList[i] % 2 === 1) {
+               oddNum.push(arrList[i]);
+               oddCnt++;
+           }
+       }
+       document.write(`입력한 숫자는 ${arrList}이고, 그 중 홀수는 ${oddNum}이며, 총 ${oddCnt}개입니다.`)
+   </script>
+</body>
+</html>

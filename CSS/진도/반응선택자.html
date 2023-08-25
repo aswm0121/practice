@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p:hover{
+
+                /* 마우스호버 : hover */
+            color : red;
+            background-color: green;
+        }
+
+        button:hover {
+            color: blue;
+            border-style:inset;
+            background-color: skyblue;
+        }
+
+        p:active {
+            /* 마우스 클릭: active */
+            background-color: aquamarine;
+            
+        }
+        button:active {
+            background-color: purple;
+        }
+
+        button {
+            background-color : brown;
+        }
+
+        /* 전체 선택자 + 가상클래스 */
+        *:checked {
+            box-shadow:0px 0px 0px 4px red;
+            /* border가 적용되지 않아 대신 boxshadow 사용 
+            체크할 때마다 빨간색 border 가 생김*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p>마우스를 올려보세요</p>
+    <button>클릭</button>
+
+    <input type="radio" name = "" id = "">
+    <input type="radio" name = "" id = "">
+    <input type="checkbox">
+    <input type="checkbox">
+
+
+
+</body>
+</html>

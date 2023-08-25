@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="list">
+    <button class="addBtn">add</button>
+    <button class="removeBtn">delete</button>
+    <hr>
+    <h3></h3>
+
+
+    <script>
+        const list = document.querySelector('#list');
+        const addBtn = document.querySelector('.addBtn');
+        const removeBtn = document.querySelector('.removeBtn');
+        const h3 = document.querySelector('h3')
+        const product=[];
+
+
+        addBtn.addEventListener('click',function(){
+            const inputValue = list.value.trim(); // trim() -> 양쪽 공백 없애줌
+            if(inputValue !== "") {
+                product.push(inputValue);
+                updateOutput();
+            }
+            list.value=''; //  add 버튼 누르면 입력한 값 초기화
+        })
+
+
+
+
+        function updateOutput(){
+            h3.innerHTML=product.join(',');
+            //join(')->  배열을 ,로 기준으로 문자열로 만들어줌
+        }
+
+
+        removeBtn.addEventListener('click', () => {
+            product.pop();
+            updateOutput();
+        })
+
+       
+
+
+
+    </script>
+
+
+</body>
+</html>

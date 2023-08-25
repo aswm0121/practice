@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    
+<style>
+
+
+/* .rule>strong {
+    color:red;
+    /* 자식 선택자
+    >는 바로 아래에 있는 자식에게만 적용됩니다 
+} */
+
+/* .rule  li {
+
+    color:red;
+} */
+/* 띄어서 쓰는 경우 모든 자손에게 적용됩니다 */
+
+
+/* 근접 후행 선택자 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+자기 자신 뒤에  첫번째 객체에만 적용되는 선택자
+연속된 것이 끊기면(다른 태그 만남) 다시 시작 실행해보면 안다
+ */
+ /* .rule li+li {
+    color:red;
+}  */
+
+/* 후행선택자-> 자기자신 뒤에 전부다 적용*/
+/* .rule li~li {
+    color:red;
+} */
+
+.rule li:nth-child(2) {
+    color:red;
+}
+
+.rule li:last-child {
+    color: blue;
+}
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+<div class="rule">
+<strong>연수생 수칙</strong>
+
+
+<ol>
+    <li>지각하지 않기</li>
+    <li>결석하지 않기</li>
+    <STRONG>조퇴도 안 됨</STRONG>
+    <span>불가피 할 땐 꼭 담임선생님한테 말하기</span>
+    <li>복습하기</li>
+    <li>QR 잘 찍기</li>
+    <span>하하하하 </span>
+
+</ol>
+
+</div>
+</body>
+</html>
+<!-- .rule하면 div생성 -->

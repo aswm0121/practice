@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+
+    body {
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height: 100vh;
+    }
+    .sq{
+
+        width:300px;
+        height: 300px;
+        border-style:solid;
+        border-width: 3px;
+        border-color: black;
+        border-radius: 5px;
+        padding: 10px;
+       
+        
+
+    }
+
+
+</style>
+<body>
+    
+
+    <div class="sq">
+        <h1>Hello world!</h1>
+        <br>
+        <br>
+        <button onclick = "btnChange()">change💕</button>
+        <button onclick = "btnRevert()">Revert🎶</button>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <script>
+
+
+        btnChange = function() {
+            // ctrl + / : 주석
+            // 문서의 바디태그의 스타일의 배경색을 검정색으로 바꿔주세요
+            // 문서의 바디태그의 스타일의 글자색을 흰색으로 바꿔주세요
+            document.getElementsByTagName('body')[0].style.backgroundColor = "black";
+            document.getElementsByTagName('body')[0].style.color = 'white';
+            document.getElementsByTagName('div')[0].style.borderColor = 'green';
+            document.getElementsByTagName('ul')[0].style.color = "red";
+            
+        }
+
+        
+
+        btnRevert = function() {
+            
+            document.getElementsByTagName('body')[0].style.backgroundColor = "white";
+            document.getElementsByTagName('body')[0].style.color = 'red';
+            document.getElementsByTagName('body')[0].style.backgroundColor = "darkblue";
+            document.getElementsByTagName('ul')[0].style.color = "yellow";
+        }
+
+    </script>
+</body>
+</html>

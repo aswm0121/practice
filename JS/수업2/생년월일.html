@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            display : flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #box {
+            position: relative;
+            top: 350px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id ="box">
+    <input type="text" placeholder="연도를 입력하세요"><br>
+    <input type="text" placeholder = "달을 입력하세요"><br>
+    <input type="text" placeholder = "일을 입력하세요"><br>
+    <button>만나이계산</button>
+    <h1 id = "age"></h1>
+</div>
+
+
+    <script>
+        btn = document.querySelector("button")
+        let byear = document.querySelectorAll('input')[0];
+        let bmonth = document.querySelectorAll('input')[1];
+        let bday =document.querySelectorAll('input')[2];
+
+        var today = new Date();
+
+// Get the current date components
+    var tyear = today.getFullYear();   // 4-digit year
+    var tmonth = today.getMonth() + 1; // Month (0 - 11, so we add 1)
+    var tday = today.getDate();  
+    let age  = 0;
+    let hone = document.querySelector("#age")
+        
+        btn.addEventListener('click', () => {
+
+            age = tyear - byear.value;
+            if (typeof(byear.value) !="Number" ||typeof(bmonth.value)!="Number"||typeof(bday.value)!="Number") {
+                hone.innerHTML = "올바른 형식으로 기입해주세요"
+            }
+
+            if (tmonth > bmonth.value) age = age;
+
+            else {
+                if (tmonth == bmonth.value) {
+                    if (tday >= bday.value) age = age;
+                    else age-= 1;
+                }
+                else age -= 1;
+            }
+
+           hone.innerHTML = `만 나이는 ${age}세 입니다`
+        
+
+        
+        })
+
+
+    </script>
+</body>
+</html>

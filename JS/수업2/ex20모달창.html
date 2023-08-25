@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f3aa567758.js" crossorigin="anonymous"></script>
+
+<style>
+
+    
+
+    .container {
+        width: 200px;
+        height: 200px;
+        box-shadow: 4px 4px 4px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius : 5px;
+        background-image: linear-gradient(to right, skyblue, white);
+        position : relative;
+        top: 250px;
+        left: 600px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+</style>
+</head>
+<body>
+    
+
+<input type="text" id = "name">
+<button class = "hello">Hello</button>
+<div class = "container hidden">
+    <h2 class = "story"></h2>
+    <button class = "confirm">확인<i class="fa-solid fa-globe"></i></button>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+let divs = document.querySelector(".container");
+let btn = document.querySelector('.hello');
+let names = document.querySelector('#name');
+let story = document.querySelector('.story');
+let btn2 = document.querySelector('.confirm');
+
+
+btn.addEventListener('click', () => {
+    if (divs.classList.contains('hidden')) {
+        divs.classList.remove('hidden');
+        if (names.value =="" || names.value == null) story.innerHTML = `이름을 입력해주세요`;
+        else story.innerHTML = `${names.value}님 안녕하세요`;
+        document.body.style.backgroundColor = "pink";
+        
+    }
+    else {divs.classList.add('hidden');
+    document.body.style.backgroundColor = "white";
+}
+})
+
+
+btn2.addEventListener('click', ()=> {
+    if (divs.classList.contains('hidden')) {
+        divs.classList.remove('hidden');
+    }
+    else {divs.classList.add('hidden');
+    document.body.style.backgroundColor = "white";
+
+}
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

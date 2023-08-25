@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .hidden {
+            display: none;
+        }
+
+        .myDiv {
+            background-color: yellow;
+            width : 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    
+
+<button>toggle</button>
+<div class="myDiv hidden">
+    <h1>Hello World💕</h1>
+</div>
+
+
+
+<script>
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+    const myDiv = document.querySelector('.myDiv');
+    // if (myDiv.classList.contains('hidden')) {
+
+    //     // 클래스명 지우기
+    //     myDiv.classList.remove("hidden");
+    // }
+
+    // else {
+        // 클래스명 추가하기
+    //     myDiv.classList.add("hidden");
+    // }
+
+    // })
+
+    myDiv.classList.toggle('hidden'); // toggle은 주로 classList에서 사용한다
+})
+
+</script>
+</body>
+
+
+
+
+
+</html>

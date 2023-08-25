@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "btn">Click</button>
+    <h1></h1>
+
+    <script>
+        // 콜백함수 -> 어떤 이벤트가 발생했거나 특정 시점에 도달했을 때 시스템에서 호출하는 함수
+        // 함수에 파라미터로 들어가는 함수
+
+        // 1. 이벤트 핸들러 & 리스너
+        document.querySelector(".btn").addEventListener('click', () => {
+            document.querySelector('h1').innerText = '클릭했다!!'
+        })
+
+
+
+        // stack -> 기본적으로 자바스크립트는 stack -> 하나의 컵 (먼저 들어간 것들이 먼저 실행-> 순차적)
+        // 자바스크립트는 원래 한 번에 한 명령밖에 실행 못한다 -> callback함수 사용하면 heap공간에 넣어둠(stack과는 별도)
+        // heap공간에서 queue로 넘어감 -> 나머지 다 실행되면 그제서야 시작
+        // queue
+
+
+
+        // 2. 타임핸들러
+
+        // 시간 지연: setTimeout()
+        setTimeout(() => {
+            console.log('3')
+        }, 2000) // 2000 = 2초
+        console.log('1')
+        console.log('2')
+        
+
+
+
+    </script>
+</body>
+</html>

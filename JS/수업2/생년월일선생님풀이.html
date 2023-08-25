@@ -1,0 +1,49 @@
+<!-- input창을 이용해서 이름을 입력 받습니다 -->
+<!-- 버튼을 누르면 xXX님 안녕하세요, 라고 인사합니다 -->
+<!-- 공백이거나 숫자이면 '이름을 입력해 주세요'라고 경고창이 뜹니다. -->
+<!-- css로 예쁘게 꾸며주세요  -->
+
+
+<!-- 생년월일을 입력 받습니다 -->
+<!-- 2023년 기준으로 만 나이가 얼마인지 계산해서 보여줍니다 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산기</title>
+</head>
+<body>
+    <input type="text" placeholder="년도를 입력 해 주세요" id="yearInput">
+    <input type="text" placeholder="월일을 입력 해 주세요 (예: MMDD)" id="dateInput">
+    <button id="calculateButton">만 나이 계산</button>
+    <p id="result"></p>
+
+    <script>
+        const calBtn = document.querySelector('#calculateButton');
+        const resultParagraph = document.querySelector('#result');
+
+        calBtn.addEventListener('click', () => {
+            const inputYear = document.querySelector('#yearInput').value;
+            const inputDate = document.querySelector('#dateInput').value;
+
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            const birthYear = parseInt(inputYear);
+            const birthMonth = parseInt(inputDate.slice(0, 2));
+            const birthDay = parseInt(inputDate.slice(2, 4));
+
+            let age = currentYear - birthYear;
+
+            // 생일이 지났는지 체크
+            if (today.getMonth() + 1 < birthMonth || (today.getMonth() + 1 === birthMonth && today.getDate() < birthDay)) {
+                age--;
+            }
+
+            resultParagraph.textContent = `만 나이는 ${age}세 입니다.`;
+        });
+    </script>
+</body>
+</html>

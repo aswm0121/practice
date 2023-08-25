@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        body {
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            /* 중앙정렬 했다 🤣*/
+
+        }
+        .ball {
+
+            width: 100px;
+            height:100px;
+            background-color: green;
+            border-radius:50%;
+            /* 공 만들었🤣🤣 */
+            /* 이제부터 애니메이션 만들기 */
+            position: relative;
+            animation-name:bounce;
+            animation-duration:2s;
+            animation-iteration-count: 3;
+            
+
+        }
+
+        @keyframes bounce {
+
+
+            
+
+            /* 키프레임: 애니메이션 동작 */
+
+            from{top: 0;
+            
+            
+            
+            }
+            /* relative에서 top: 0은 현재 그 위치를 말함 */
+
+            /* 여기에서부터 */
+            50% {top:300px;
+                transform:scale(0.2);
+            transition: 1s;
+            
+                
+            }
+            /* 중간지점 */
+
+
+            to  {top: 0;
+            
+            
+            
+            
+            }
+            /* 여기까지 도달 */
+        }
+
+
+
+
+
+
+    </style>
+<body>
+    
+
+    <div class="ball">
+
+
+
+
+    </div>
+
+</body>
+</html>

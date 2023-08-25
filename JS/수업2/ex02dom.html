@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder = "이름을 입력해주세요">
+    <!-- value는 보여주는 값, placeholder는 클릭하면 지워짐 -->
+    <button>Hello!</button>
+    <button>Change</button>
+    <hr>
+    <h1></h1>
+
+    <script>
+
+        const btn = document.getElementsByTagName('button');
+
+        btn[0].addEventListener('click', () => {
+            // 화살표 함수
+        const input = document.getElementsByTagName('input')[0];
+        const h1 = document.getElementsByTagName('h1')[0];
+        // getElementsByTagName으로 불러오면 배열로 불러온것
+        h1.innerHTML += `${input.value}님 안녕하세요 <br>`;
+    });
+
+    btn[1].addEventListener('click', function() {
+            //  console.log(h1);
+            // 전역변수가 아니기 때문에 불러와지지 않는다.
+            const h1 = document.getElementsByTagName('h1');
+            // // 배열로 불러와진다.
+            // console.log(h1);
+            for(let i = 0; i < h1.length; i++){
+                h1[i].style.color = 'red';
+            }
+        })
+
+
+
+
+    </script>
+</body>
+</html>

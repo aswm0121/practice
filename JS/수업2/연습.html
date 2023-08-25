@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="list">
+    <button class="addBtn">add</button>
+    <button class="removeBtn">delete</button>
+    <hr>
+    <h3></h3>
+
+    <script>
+
+        let lists = document.querySelector("#list");
+        let btns = document.querySelector('.addBtn');
+        let btn2 = document.querySelector('removeBtn');
+        let hh = document.querySelector('h3');
+        const products = [];
+        
+
+        btns.addEventListener('click', () => {
+
+            products.push(lists.value.trim());
+            showproducts;
+
+        })
+
+        function showproducts() {
+            hh.innerHTML = products.join(',');
+        }
+
+
+    </script>
+</body>
+</html>
